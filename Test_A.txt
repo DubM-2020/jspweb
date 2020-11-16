@@ -1,5 +1,0 @@
-Public void A{
-
-	테스트 A
-
-}
