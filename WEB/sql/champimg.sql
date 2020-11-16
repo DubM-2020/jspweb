@@ -1,0 +1,47 @@
+--------------------------------------------------------
+--  파일이 생성됨 - 화요일-9월-29-2020   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table CHAMPIMG
+--------------------------------------------------------
+
+  CREATE TABLE "SCOTT"."CHAMPIMG" 
+   (	"CHAMPIMGNO" NUMBER(10,0), 
+	"CHAMPIMG" VARCHAR2(100 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+REM INSERTING into SCOTT.CHAMPIMG
+SET DEFINE OFF;
+Insert into SCOTT.CHAMPIMG (CHAMPIMGNO,CHAMPIMG) values (2,'leesin.png');
+Insert into SCOTT.CHAMPIMG (CHAMPIMGNO,CHAMPIMG) values (3,'zoe.png');
+Insert into SCOTT.CHAMPIMG (CHAMPIMGNO,CHAMPIMG) values (4,'blitzcrank.png');
+Insert into SCOTT.CHAMPIMG (CHAMPIMGNO,CHAMPIMG) values (5,'ezreal.png');
+Insert into SCOTT.CHAMPIMG (CHAMPIMGNO,CHAMPIMG) values (6,'wreckingBall.png');
+Insert into SCOTT.CHAMPIMG (CHAMPIMGNO,CHAMPIMG) values (12,'UNKOWNS');
+Insert into SCOTT.CHAMPIMG (CHAMPIMGNO,CHAMPIMG) values (1,'irelia.png');
+Insert into SCOTT.CHAMPIMG (CHAMPIMGNO,CHAMPIMG) values (7,'genji.png');
+Insert into SCOTT.CHAMPIMG (CHAMPIMGNO,CHAMPIMG) values (8,'reinhardt.png');
+Insert into SCOTT.CHAMPIMG (CHAMPIMGNO,CHAMPIMG) values (9,'ana.png');
+Insert into SCOTT.CHAMPIMG (CHAMPIMGNO,CHAMPIMG) values (10,'tracer.png');
+Insert into SCOTT.CHAMPIMG (CHAMPIMGNO,CHAMPIMG) values (11,'moira.png');
+--------------------------------------------------------
+--  DDL for Index SYS_C007189
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "SCOTT"."SYS_C007189" ON "SCOTT"."CHAMPIMG" ("CHAMPIMGNO") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+--------------------------------------------------------
+--  Constraints for Table CHAMPIMG
+--------------------------------------------------------
+
+  ALTER TABLE "SCOTT"."CHAMPIMG" ADD PRIMARY KEY ("CHAMPIMGNO")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM"  ENABLE;
